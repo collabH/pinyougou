@@ -6,8 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="pinyougou-eureka-server" />
+        <module name="pinyougou-pojo" />
+        <module name="pinyougou-provider-sellergoods" />
         <module name="pinyougoueurekaserver" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pinyingou-common" target="1.8" />
+      <module name="pinyougou-modules" target="1.8" />
+      <module name="pinyougou-pojo" target="1.8" />
+      <module name="pinyougou-provider" target="1.8" />
+      <module name="pinyougou-sellergoods" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pinyingou-common" options="-parameters" />
+      <module name="pinyougou-eureka-server" options="-parameters" />
+      <module name="pinyougou-modules" options="-parameters" />
+      <module name="pinyougou-pojo" options="-parameters" />
+      <module name="pinyougou-provider" options="-parameters" />
+      <module name="pinyougou-provider-sellergoods" options="-parameters" />
+      <module name="pinyougou-sellergoods" options="-parameters" />
+    </option>
   </component>
 </project>

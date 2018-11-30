@@ -5,7 +5,12 @@ spring:
     user:
       name: pinyougou
       password: huangsm
+  profiles:
+    active: dev
 
+---
+spring:
+     profiles: dev
 #eureka注册中心的端口
 server:
   port: 9000
@@ -18,5 +23,22 @@ eureka:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
-      enable-self-preservation: false
-      eviction-interval-timer-in-ms: 5000
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+---
+spring:
+     profiles: prod
+#eureka注册中心的端口
+server:
+  port: 9001
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
