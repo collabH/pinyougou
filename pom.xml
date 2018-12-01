@@ -34,8 +34,7 @@
 
         <fastjson.version>1.2.46</fastjson.version>
         <commons-io.version>2.6</commons-io.version>
-        <mybatis-plus.version>2.1.9</mybatis-plus.version>
-        <mybatisplus-spring-boot-starter.version>3.0.6</mybatisplus-spring-boot-starter.version>
+        <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
         <swagger2.version>2.8.0</swagger2.version>
         <druid.version>1.1.8</druid.version>
         <mysql.version>5.1.25</mysql.version>
@@ -75,6 +74,13 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- druid数据库连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
         </dependency>
     </dependencies>
 
@@ -87,25 +93,25 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--mybatis-puls-->
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Mybatis-plus -->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis-plus.version}</version>
+                <artifactId>mybatisplus-spring-boot-starter</artifactId>
+                <version>${mybatisplus-spring-boot-starter.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid.version}</version>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>2.0.7</version>
             </dependency>
-                <dependency>
-                    <!-- Import dependency management from Spring Boot -->
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-dependencies</artifactId>
-                    <version>${spring.boot.version}</version>
-                    <type>pom</type>
-                    <scope>import</scope>
-                </dependency>
         </dependencies>
     </dependencyManagement>
 
