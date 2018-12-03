@@ -11,7 +11,7 @@ import javax.sql.DataSource;
 /**
  * 数据源配置
  */
-@Configuration
+//@Configuration
 public class DataSourceConfig {
     @Bean(name="dataSource")
     @ConfigurationProperties(prefix="spring.datasource")

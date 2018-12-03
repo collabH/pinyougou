@@ -6,11 +6,12 @@ spring:
     password: mysql
     type: com.alibaba.druid.pool.DruidDataSource
   application:
-    name: sellergoods-server
+    name: sellergoods-service
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9000/eureka/
 server:
-  port: 9001
-
+  port: 9002
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml

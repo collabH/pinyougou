@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.huangsm</groupId>
+    <artifactId>pinyougou-provider-sellergoods-api</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>sellergoods-api</name>
+    <description>后台商家服务API</description>
+
+    <parent>
+        <groupId>com.huangsm</groupId>
+        <artifactId>pinyougou-provider-api</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+
+
+</project>

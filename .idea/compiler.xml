@@ -7,8 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pinyougou-eureka-server" />
+        <module name="pinyougou-gateway" />
         <module name="pinyougou-pojo" />
         <module name="pinyougou-provider-sellergoods" />
+        <module name="pinyougou-provider-sellergoods-api" />
+        <module name="pinyougou-support" />
         <module name="pinyougoueurekaserver" />
       </profile>
     </annotationProcessing>
@@ -24,11 +27,15 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="pinyingou-common" options="-parameters" />
       <module name="pinyougou-eureka-server" options="-parameters" />
+      <module name="pinyougou-gateway" options="-parameters" />
       <module name="pinyougou-modules" options="-parameters" />
       <module name="pinyougou-pojo" options="-parameters" />
-      <module name="pinyougou-provider" options="-parameters" />
-      <module name="pinyougou-provider-sellergoods" options="" />
+      <module name="pinyougou-provider" options="" />
+      <module name="pinyougou-provider-api" options="" />
+      <module name="pinyougou-provider-sellergoods" options="-parameters" />
+      <module name="pinyougou-provider-sellergoods-api" options="-parameters" />
       <module name="pinyougou-sellergoods" options="-parameters" />
+      <module name="pinyougou-support" options="-parameters" />
     </option>
   </component>
 </project>

@@ -4,35 +4,31 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.huangsm</groupId>
-    <artifactId>pinyougou-provider</artifactId>
+    <artifactId>pinyougou-provider-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>pinyougou-provider</name>
-    <description>服务提供者</description>
+    <name>pinyougou-provider-api</name>
+    <description>服务Api</description>
 
     <parent>
         <artifactId>pinyougou</artifactId>
         <groupId>com.huangsm</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <modules>
+        <module>pinyougou-provider-sellergoods-api</module>
+    </modules>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <groupId>com.huangsm</groupId>
+            <artifactId>pinyougou-support</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
