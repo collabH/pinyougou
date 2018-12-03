@@ -1,5 +1,5 @@
 # pinyougou
-将基于SOA架构的分布式SSM框架的电商改造为Springboot+springcloud
+将基于SOA架构的分布式SSM框架的电商改造为Springboot+springcloud+mybatis-plus+springcloud-gateway等
 
 
 ### 平台目录结构说明
