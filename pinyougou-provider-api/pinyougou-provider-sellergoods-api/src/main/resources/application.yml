@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: sellergoods-service-api
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+server:
+  port: 9003
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+
+feign:
+  hystrix:
+    enabled: true

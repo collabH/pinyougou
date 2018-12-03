@@ -4,7 +4,6 @@ import com.huangsm.pinyougou.domain.TbBrand;
 import com.huangsm.pinyougou.service.BrandFeignApi;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
