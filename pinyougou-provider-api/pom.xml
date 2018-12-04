@@ -19,6 +19,7 @@
 
     <modules>
         <module>pinyougou-provider-sellergoods-api</module>
+        <module>pinyougou-provider-order-api</module>
     </modules>
     <dependencies>
         <dependency>

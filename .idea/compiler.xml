@@ -9,6 +9,8 @@
         <module name="pinyougou-eureka-server" />
         <module name="pinyougou-gateway" />
         <module name="pinyougou-pojo" />
+        <module name="pinyougou-provider-order" />
+        <module name="pinyougou-provider-order-api" />
         <module name="pinyougou-provider-sellergood-api" />
         <module name="pinyougou-provider-sellergoods" />
         <module name="pinyougou-provider-sellergoods-api" />
@@ -33,6 +35,8 @@
       <module name="pinyougou-pojo" options="-parameters" />
       <module name="pinyougou-provider" options="" />
       <module name="pinyougou-provider-api" options="" />
+      <module name="pinyougou-provider-order" options="-parameters" />
+      <module name="pinyougou-provider-order-api" options="-parameters" />
       <module name="pinyougou-provider-sellergoods" options="-parameters" />
       <module name="pinyougou-provider-sellergoods-api" options="-parameters" />
       <module name="pinyougou-sellergoods" options="-parameters" />

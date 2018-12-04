@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/pinyougou-provider-api/pom.xml" />
         <option value="$PROJECT_DIR$/pinyougou-provider-api/pinyougou-provider-sellergoods-api/pom.xml" />
         <option value="$PROJECT_DIR$/pinyougou-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-provider/pinyougou-provider-order/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-provider-api/pinyougou-provider-order-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

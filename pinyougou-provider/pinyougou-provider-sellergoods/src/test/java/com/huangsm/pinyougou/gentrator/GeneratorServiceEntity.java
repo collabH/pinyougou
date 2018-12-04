@@ -13,7 +13,7 @@ public class GeneratorServiceEntity {
     public static void main(String[] args) {
         String packageName = "com.huangsm.pinyougou";
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
-        generateByTables(serviceNameStartWithI, packageName, "tb_brand");
+        generateByTables(serviceNameStartWithI, packageName, "tb_order");
 
     }
 

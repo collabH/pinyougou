@@ -13,4 +13,5 @@ import com.huangsm.pinyougou.domain.TbBrand;
  */
 public interface TbBrandService extends IService<TbBrand> {
 
+    boolean submitBrand(TbBrand brand);
 }

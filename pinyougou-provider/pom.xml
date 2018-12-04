@@ -11,6 +11,10 @@
     <name>pinyougou-provider</name>
     <description>服务提供者</description>
 
+    <modules>
+        <module>pinyougou-provider-sellergoods</module>
+        <module>pinyougou-provider-order</module>
+    </modules>
     <parent>
         <artifactId>pinyougou</artifactId>
         <groupId>com.huangsm</groupId>
@@ -24,6 +28,27 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--lcn解决分布式事务-->
+        <dependency>
+            <groupId>com.codingapi</groupId>
+            <artifactId>transaction-springcloud</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.codingapi</groupId>
+            <artifactId>tx-plugins-db</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
     <build>

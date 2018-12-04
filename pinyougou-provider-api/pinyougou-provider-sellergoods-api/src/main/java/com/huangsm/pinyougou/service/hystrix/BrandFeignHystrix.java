@@ -18,4 +18,9 @@ public class BrandFeignHystrix implements BrandFeignApi {
     public List<TbBrand> findBrands() {
         return null;
     }
+
+    @Override
+    public boolean submitBrand(TbBrand brand) {
+        return false;
+    }
 }

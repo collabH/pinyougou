@@ -27,7 +27,6 @@ public class SwaggerConfig {
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
-                .groupName("品牌管理")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.huangsm.pinyougou.web.rpc"))
                 .paths(PathSelectors.any())

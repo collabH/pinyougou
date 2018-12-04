@@ -45,6 +45,7 @@
         <hystrix.version>2.0.1.RELEASE</hystrix.version>
         <swagger.ui.version>1.8.7</swagger.ui.version>
         <swagger.annotations.version>1.5.20</swagger.annotations.version>
+        <lcn.last.version>4.1.0</lcn.last.version>
     </properties>
     <dependencies>
         <!--注册中心-->
@@ -164,6 +165,29 @@
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
             </dependency>
+            <!--lcn解决分布式事务-->
+          <!--  <dependency>
+                <groupId>com.codingapi</groupId>
+                <artifactId>transaction-springcloud</artifactId>
+                <version>${lcn.last.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.codingapi</groupId>
+                <artifactId>tx-plugins-db</artifactId>
+                <version>${lcn.last.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>-->
         </dependencies>
     </dependencyManagement>
 

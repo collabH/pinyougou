@@ -12,6 +12,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:9000/eureka/
 server:
-  port: 9002
+  port: 9006
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
+feign:
+  hystrix:
+    enabled: true
