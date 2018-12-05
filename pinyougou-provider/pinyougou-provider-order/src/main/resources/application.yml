@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pinyougoudb
+    username: root
+    password: mysql
+  application:
+    name: order-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+server:
+  port: 8082
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+
+#开启feign的熔断器
+feign:
+  hystrix:
+    enabled: true
+#tm:
+#  manager:
+#    url: http://127.0.0.1:8899/tx/manager/
