@@ -10,13 +10,14 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * <p>
  *  服务实现类
+ *  注意需要实现 ITxTransaction；
  * </p>
  *
  * @author by.zl
  * @since 2018-12-04
  */
 @Service
-public class TbOrderServiceImpl extends ServiceImpl<TbOrderMapper, TbOrder> implements TbOrderService {
+public class TbOrderServiceImpl extends ServiceImpl<TbOrderMapper, TbOrder> implements TbOrderService  {
 
     @Transactional
     @Override

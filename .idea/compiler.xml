@@ -22,7 +22,7 @@
       <module name="pinyingou-common" target="1.8" />
       <module name="pinyougou-modules" target="1.8" />
       <module name="pinyougou-pojo" target="1.8" />
-      <module name="pinyougou-provider" target="1.8" />
+      <module name="pinyougou-provider" target="1.7" />
       <module name="pinyougou-sellergoods" target="1.8" />
     </bytecodeTargetLevel>
   </component>
