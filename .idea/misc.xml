@@ -21,6 +21,7 @@
       <set>
         <option value="$PROJECT_DIR$/pinyougou-modules/pom.xml" />
         <option value="$PROJECT_DIR$/pinyougou-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/tx-manager/pom.xml" />
       </set>
     </option>
   </component>

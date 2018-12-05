@@ -24,6 +24,7 @@
       <module name="pinyougou-pojo" target="1.8" />
       <module name="pinyougou-provider" target="1.8" />
       <module name="pinyougou-sellergoods" target="1.8" />
+      <module name="tx-manager" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -41,6 +42,7 @@
       <module name="pinyougou-provider-sellergoods-api" options="-parameters" />
       <module name="pinyougou-sellergoods" options="-parameters" />
       <module name="pinyougou-support" options="-parameters" />
+      <module name="tx-manager" options="-parameters" />
     </option>
   </component>
 </project>

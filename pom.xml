@@ -13,6 +13,7 @@
         <module>pinyougou-provider-api</module>
         <module>pinyougou-support</module>
         <module>pinyougou-gateway</module>
+        <module>tx-manager</module>
     </modules>
     <packaging>pom</packaging>
     <description>品优购</description>
@@ -29,7 +30,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.0.1.RELEASE</spring-boot.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 
         <!--Lombok-->
